@@ -26,7 +26,15 @@ my $code =  q{
                                                     
                                                                                                                                                                                                                              
 
-    [---]   Coding by HOCK   [---]
+    
+  ,--, .---. ,'|"\  ,-.-. .-. ,--,     ,---.-.   .-.  .-. .-..---.   ,--, ,-. .-. 
+.' .')/ .-. )| |\ \ |(|  \| .' .'      | .-.\ \_/ )/  | | | / .-. ).' .') | |/ /  
+|  |(_| | |(_| | \ \(_|   | |  |  __   | |-' \   (_)  | `-' | | |(_|  |(_)| | /   
+\  \  | | | || |  \ | | |\  \  \ ( _)  | |--. ) (     | .-. | | | |\  \   | | \   
+ \  `-\ `-' //(|`-' | | | |)|\  `-) )  | |`-' | |     | | |)\ `-' / \  `-.| |) \  
+  \____)---'(__)`--'`-/(  (_))\____/   /( `--/(_|     /(  (_))---'   \____|((_)-' 
+      (_)            (__)   (__)      (__)  (__)     (__)   (_)           (_)     
+
     =-------=-=-=-=-=-=-=-=-=-------=
 };
 
@@ -38,7 +46,7 @@ print("\n");
 
 
 # Check Intenret Connection !
-print("\r[~] Checking Internet Connection [...]");
+print("\r[~] Kiem tra ket noi Internet [...]");
 STDOUT->flush();
 sleep(2);
 my $check = IO::Socket::INET->new('PeerAddr'=>'www.google.com', 
@@ -57,11 +65,11 @@ STDOUT->flush();
 
 print q{
     =========================================================
-    |   1    |  DDOS UDP & TCP                              |
-    |   2    |  DDOS SOCK5 & SOCK4                          |
+    |   1    |  Tan cong bang UDP & TCP                     |
+    |   2    |  Tan cong bang SOCK5 & SOCK4                 |
     =========================================================
 };
-print("\n\n[~]Choose: "); # Set Target IP
+print("\n\n[~]Lua chon: "); # Set Target IP
 $choose = <STDIN>;
 chomp ($choose);
 while ($choose eq ""){

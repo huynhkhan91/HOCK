@@ -375,13 +375,13 @@ def main():
 	global brute
 	global url
 	mode = "cc"
-	url = str(input("	[+] URL Target:")).strip()
+	url = str(input("	[+] Link can attack:")).strip()
 	prevent()
 	ParseUrl(url)
 	choice2 = InputOption("	[+] Cookies? (y/n, default=n):",["y","n","yes","no"],"n")
 	if choice2 == "y":
 		cookies = str(input("Plese input the cookies:")).strip()
-	choice = InputOption("	[+] Choose your socks mode(4/5, default=5):",["4","5"],"5")
+	choice = InputOption("	[+] Chon file proxy(4/5, default=5):",["4","5"],"5")
 	if choice == "4":
 		socks_type = 4
 	else:
